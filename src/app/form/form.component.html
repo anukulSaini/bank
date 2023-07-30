@@ -1,0 +1,16 @@
+<!-- form.component.html -->
+<form (ngSubmit)="onSubmit(form.value)" #form="ngForm">
+    <!-- Form fields -->
+    <div>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" ngModel required>
+    </div>
+    <div>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" ngModel required>
+    </div>
+    <!-- Add more form fields as needed -->
+  
+    <button type="submit">Submit</button>
+  </form>
+  

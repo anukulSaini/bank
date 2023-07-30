@@ -1,0 +1,10 @@
+<!-- registration.component.html -->
+<h1>Welcome to Registration</h1>
+
+<div>
+  <a routerLink="/form" *ngIf="!showForm">Register</a>
+</div>
+
+<div *ngIf="showForm">
+  <app-form (formSubmitted)="onFormSubmitted($event)"></app-form>
+</div>

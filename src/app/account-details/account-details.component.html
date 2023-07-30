@@ -1,0 +1,42 @@
+<!-- account-details.component.html -->
+<div class="account-details">
+    <h2>Account Details</h2>
+    
+    <form (ngSubmit)="onSubmit(form.value)" #form="ngForm">
+      <div class="form-group">
+        <label for="accountHolderName">Account Holder's Name:</label>
+        <input type="text" id="accountHolderName" name="accountHolderName" [(ngModel)]="accountHolderName" required />
+      </div>
+      <div class="form-group">
+        <label for="contactInformation">Contact Information:</label>
+        <input type="text" id="contactInformation" name="contactInformation" [(ngModel)]="contactInformation" required />
+      </div>
+      <div class="form-group">
+        <label for="address">Address:</label>
+        <input type="text" id="address" name="address" [(ngModel)]="address" required />
+      </div>
+      <div class="form-row">
+        <div class="form-group col">
+          <label for="city">City:</label>
+          <input type="text" id="city" name="city" [(ngModel)]="city" required />
+        </div>
+        <div class="form-group col">
+          <label for="country">Country:</label>
+          <input type="text" id="country" name="country" [(ngModel)]="country" required />
+        </div>
+        <div class="form-group col">
+          <label for="postalCode">Postal Code:</label>
+          <input type="text" id="postalCode" name="postalCode" [(ngModel)]="postalCode" required />
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="phoneNumber">Phone Number:</label>
+        <input type="text" id="phoneNumber" name="phoneNumber" [(ngModel)]="phoneNumber" required />
+      </div>
+  
+      <button type="submit">Save Data</button>
+    </form>
+  </div>
+
+  
+
