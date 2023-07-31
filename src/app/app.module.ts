@@ -20,6 +20,8 @@ import {MatMenuModule} from '@angular/material/menu';
 import {MatIconModule} from '@angular/material/icon';
 import {MatButtonModule} from '@angular/material/button';
 import {MatToolbarModule} from '@angular/material/toolbar';
+import { DebitCardComponent } from './debit-card/debit-card.component';
+import { CreditCardsComponent } from './credit-cards/credit-cards.component';
 
 const routes: Routes = [
   { path: '', component: LandingComponent }, // Default route
@@ -44,6 +46,8 @@ const routes: Routes = [
      FormComponent,
      RegistrationComponent,
      LoginComponent,
+     DebitCardComponent,
+     CreditCardsComponent,
   ],
   imports: [
     BrowserModule,

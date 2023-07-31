@@ -20,9 +20,11 @@
         <button mat-menu-item routerLink="/accdetails" *ngIf="!showForm">
             <a >Register</a>
         </button>
-            <button *ngIf="login" mat-menu-item  (click)="disableLogin()" >Login</button>
+        
+            <button *ngIf="login" mat-menu-item routerLink="/login" (click)="disableLogin()" >Login</button>
+        
         </mat-menu>
-        <!-- routerLink="/login" -->
+
     <button mat-button [matMenuTriggerFor]="belowMenu" class="aaa">Cards</button>
     <mat-menu #belowMenu="matMenu" yPosition="below">
     <button mat-menu-item>Item 1</button>
@@ -78,4 +80,9 @@
   <footer>
     <p>&copy; 2023 Your Bank. All rights reserved.</p>
   </footer>
+
+
+  <app-debit-card></app-debit-card>
+
+  
   

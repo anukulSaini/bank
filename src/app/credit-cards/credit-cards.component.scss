@@ -1,0 +1,75 @@
+
+.credit-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 20px;
+  
+    .credit-card {
+      background-color: #f1f1f1;
+      border-radius: 12px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      width: 300px;
+      margin: 20px;
+      transition: transform 0.2s ease;
+  
+      &:hover {
+        transform: translateY(-5px);
+        cursor: pointer;
+      }
+  
+      .card-type {
+        font-size: 18px;
+        font-weight: bold;
+        margin-bottom: 10px;
+        color: #004d9c;
+      }
+  
+      .card-logo {
+        text-align: center;
+        margin-bottom: 10px; 
+  
+        img {
+          max-width: 100%; 
+          max-height: 80px;
+        }
+      }
+  
+      .card-number {
+        font-size: 20px;
+        font-weight: bold;
+        margin-bottom: 15px;
+        color: #333;
+      }
+  
+      .card-details {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 10px;
+  
+        .label {
+          font-size: 14px;
+          color: #888;
+        }
+      }
+  
+      .apply-button {
+        display: block;
+        margin: 10px auto 0;
+        padding: 10px 20px;
+        background-color: #004d9c;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        font-size: 16px;
+        cursor: pointer;
+        transition: background-color 0.2s ease;
+  
+        &:hover {
+          background-color: #003671;
+        }
+      }
+    }
+  }
+  
