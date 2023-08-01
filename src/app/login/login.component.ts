@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
+import { LandingComponent } from '../landing/landing.component';
+
 
 @Component({
   selector: 'app-login',
@@ -31,6 +33,7 @@ export class LoginComponent {
       this.showErrorMessage = false;
       console.log('Login successful!');
       this.router.navigate(['/']);
+      
     } else {
       // Login failed, show error message
       this.showErrorMessage = true;

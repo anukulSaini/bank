@@ -1,0 +1,27 @@
+<div class="personal-loan-calculator">
+    <h2>Personal Loan EMI Calculator</h2>
+    <div class="form-group">
+      <label for="loanAmount">Loan Amount (in INR):</label>
+      <input type="number" id="loanAmount" name="loanAmount" [(ngModel)]="loanAmount" required />
+    </div>
+    <div class="form-group">
+      <label for="interestRate">Interest Rate (% per annum):</label>
+      <input type="number" id="interestRate" name="interestRate" [(ngModel)]="interestRate" required />
+    </div>
+    <div class="form-group">
+      <label for="loanTenure">Loan Tenure (in years):</label>
+      <input type="number" id="loanTenure" name="loanTenure" [(ngModel)]="loanTenure" required />
+    </div>
+    <button (click)="calculateEMI()">Calculate EMI</button>
+    <div class="error-message" *ngIf="errorMessage">{{ errorMessage }}</div>
+    <div class="result" *ngIf="emi">
+      <p>EMI: {{ emi.toFixed(2) }} INR</p>
+    </div>
+
+    <div class="result" *ngIf="emi">
+        <p>EMI: {{ emi.toFixed(2) }} INR</p>
+        <p>Total Amount Paid: {{ totalAmountPaid.toFixed(2) }} INR</p>
+        <p>Total Interest Paid: {{ totalInterestPaid.toFixed(2) }} INR</p>
+      </div>
+  </div>
+  

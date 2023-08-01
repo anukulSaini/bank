@@ -8,7 +8,7 @@ import { Component, Input } from '@angular/core';
 export class DebitCardComponent {
   creditCards = [
     {
-      type: 'Debit',
+      type: 'Debitgit',
       number: 'XXXX XXXX XXXX 1234',
       holderName: 'Anukul Saini',
       expiryDate: '09/24'

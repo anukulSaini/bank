@@ -22,6 +22,8 @@ import {MatButtonModule} from '@angular/material/button';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import { DebitCardComponent } from './debit-card/debit-card.component';
 import { CreditCardsComponent } from './credit-cards/credit-cards.component';
+import { EmiCalculatorComponent } from './emi-calculator/emi-calculator.component';
+import { PersonalLoanCalculatorComponent } from './personal-loan-calculator/personal-loan-calculator.component';
 
 const routes: Routes = [
   { path: '', component: LandingComponent }, // Default route
@@ -48,6 +50,8 @@ const routes: Routes = [
      LoginComponent,
      DebitCardComponent,
      CreditCardsComponent,
+     EmiCalculatorComponent,
+     PersonalLoanCalculatorComponent,
   ],
   imports: [
     BrowserModule,

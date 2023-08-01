@@ -13,7 +13,7 @@ import { Component } from '@angular/core';
 })
 export class LandingComponent {
   login:boolean = true;
-  showForm: boolean = false;
+  showForm: boolean = false; 
 
   showFormLogin: boolean = false;
 

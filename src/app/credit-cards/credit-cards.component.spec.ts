@@ -1,21 +1,29 @@
-import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { Component } from '@angular/core';
 
-import { CreditCardsComponent } from './credit-cards.component';
+@Component({
+  selector: 'app-credit-cards',
+  templateUrl: './credit-cards.component.html',
+  styleUrls: ['./credit-cards.component.scss']
+})
+export class CreditCardsComponent {
+  creditCards = [
+    {
+      type: 'Gold',
+      number: 'XXXX XXXX XXXX XXXX',
+      holderName: 'John Doe',
+      expiryDate: '09/24'
+    },
+    {
+      type: 'Platinum',
+      number: 'XXXX XXXX XXXX XXXX',
+      holderName: 'Jane Smith',
+      expiryDate: '12/25'
+    },
+    // Add more credit card objects as needed
+  ];
 
-describe('CreditCardsComponent', () => {
-  let component: CreditCardsComponent;
-  let fixture: ComponentFixture<CreditCardsComponent>;
-
-  beforeEach(() => {
-    TestBed.configureTestingModule({
-      declarations: [CreditCardsComponent]
-    });
-    fixture = TestBed.createComponent(CreditCardsComponent);
-    component = fixture.componentInstance;
-    fixture.detectChanges();
-  });
-
-  it('should create', () => {
-    expect(component).toBeTruthy();
-  });
-});
+  applyForCard(cardType: string) {
+    // Implement the logic to apply for the selected card type here
+    console.log(`Applying for ${cardType} Card...`);
+  }
+}

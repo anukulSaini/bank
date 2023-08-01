@@ -9,10 +9,6 @@ import { Router } from '@angular/router';
 export class AppComponent {
   title = 'Banking_Site';
 
-  constructor(private router: Router) {} // Inject the Router
-
-  loadDynamicComponent(): void {
-    this.router.navigateByUrl('/dynamic'); // Navigate to MyDynamicComponent when the button is clicked
-  }
+  
 
 }
